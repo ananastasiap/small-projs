@@ -8,7 +8,31 @@
 </head>
 
 <body>
+  <section class="wrapper">
+    <div class="func">
+      <div class="size-section">
+        <div class="width">
+          <label for="width-range">Grid Width</label>
+          <input type="range" id="width-range" min="1" max="45">
+          <span id="width-value">00</span>
+        </div>
+        <div class="height">
+          <label for="height-range">Grid Height</label>
+          <input type="range" id="height-range" min="1" max="45">
+          <span id="height-value">00</span>
+        </div>
+      </div>
+      <div class="func-section">
+        <button id="submit-grid">Create Grid</button>
+        <button id="clear-grid">Clear Grid</button>
 
+        <input type="color" id="color-input">
+        <button id="erase-color">Erase</button>
+        <button id="paint-color">Paint</button>
+      </div>
+    </div>
+    <div class="art-field"></div>
+  </section>
 </body>
 
 </html>
