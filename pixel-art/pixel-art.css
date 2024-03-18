@@ -29,3 +29,101 @@ body {
   color: #3e3d3d;
   background-color: #ffb100;
 }
+
+button {
+  font-family: "Comfortaa", cursive;
+  padding: 10px 30px;
+  background-color: #ffb100;
+  border: 1px solid #ffb100;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(1);
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 50px;
+  max-width: 800px;
+  height: auto;
+
+  background-color: #fff;
+}
+
+.func,
+.size-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.size-section {
+  gap: 35px;
+}
+
+.grid-net,
+.grid-buttons,
+.color-section {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-net {
+  align-items: center;
+  gap: 70px;
+}
+
+input[type="range"] {
+  background-color: #ffb100;
+  cursor: pointer;
+}
+
+.grid-buttons,
+.color-section {
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+input[type="color"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  width: 90px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 8px;
+  border: 4px solid #000;
+}
+input[type="color"]::-moz-color-swatch {
+  border-radius: 8px;
+  border: 4px solid #000;
+}
+
+.cols {
+  height: 1em;
+  width: 1em;
+  border: 1px solid #ddd;
+}
+
+.rows {
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .cols {
+    height: 0.8em;
+    width: 0.8em;
+  }
+}

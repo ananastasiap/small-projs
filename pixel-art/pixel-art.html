@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pixel-art.css">
   <title>Pixel Art</title>
 </head>
 
@@ -11,28 +12,33 @@
   <section class="wrapper">
     <div class="func">
       <div class="size-section">
-        <div class="width">
-          <label for="width-range">Grid Width</label>
-          <input type="range" id="width-range" min="1" max="45">
-          <span id="width-value">00</span>
+        <div class="grid-net">
+          <div class="width">
+            <label for="width-range">Grid Width</label>
+            <input type="range" id="width-range" min="1" max="45">
+            <span id="width-value">00</span>
+          </div>
+          <div class="height">
+            <label for="height-range">Grid Height</label>
+            <input type="range" id="height-range" min="1" max="45">
+            <span id="height-value">00</span>
+          </div>
         </div>
-        <div class="height">
-          <label for="height-range">Grid Height</label>
-          <input type="range" id="height-range" min="1" max="45">
-          <span id="height-value">00</span>
+        <div class="grid-buttons">
+          <button id="submit-grid">Create Grid</button>
+          <button id="clear-grid">Clear Grid</button>
         </div>
       </div>
-      <div class="func-section">
-        <button id="submit-grid">Create Grid</button>
-        <button id="clear-grid">Clear Grid</button>
-
+      <div class="color-section">
         <input type="color" id="color-input">
-        <button id="erase-color">Erase</button>
         <button id="paint-color">Paint</button>
+        <button id="erase-color">Erase</button>
       </div>
     </div>
     <div class="art-field"></div>
   </section>
+
+  <script src="pixel-art.js"></script>
 </body>
 
 </html>
